@@ -1,6 +1,11 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ==========================================
+# Professional Dashboard - .gitignore
+# ==========================================
+# Based on Next.js 14 + shadcn/ui + TypeScript best practices
 
-# dependencies
+# ==========================================
+# Dependencies
+# ==========================================
 /node_modules
 /.pnp
 .pnp.*
@@ -10,32 +15,270 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
-/coverage
-
-# next.js
+# ==========================================
+# Production builds
+# ==========================================
 /.next/
 /out/
-
-# production
 /build
+/dist
 
-# misc
-.DS_Store
-*.pem
+# ==========================================
+# Environment variables
+# ==========================================
+# Local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# debug
+# Environment files (uncomment if you want to ignore all .env files)
+# .env*
+.env
+
+# ==========================================
+# Testing
+# ==========================================
+/coverage
+/.nyc_output
+/cypress/videos/
+/cypress/screenshots/
+/playwright-report/
+test-results.xml
+
+# ==========================================
+# Debug logs
+# ==========================================
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+lerna-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# ==========================================
+# IDE and Editors
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# vercel
-.vercel
+# VSCode - keep extensions.json for team consistency
+!.vscode/extensions.json
 
-# typescript
+# ==========================================
+# OS generated files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==========================================
+# Runtime data
+# ==========================================
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# ==========================================
+# Cache directories
+# ==========================================
+.npm
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# ==========================================
+# TypeScript
+# ==========================================
 *.tsbuildinfo
 next-env.d.ts
+
+# ==========================================
+# Next.js specific
+# ==========================================
+.vercel
+
+# ==========================================
+# shadcn/ui specific
+# ==========================================
+# Keep components.json for team consistency
+# .components.json
+
+# ==========================================
+# Tailwind CSS
+# ==========================================
+.tailwind-cache
+
+# ==========================================
+# Asset optimization
+# ==========================================
+.optimized-assets
+
+# ==========================================
+# Local development
+# ==========================================
+.local
+tmp/
+temp/
+
+# ==========================================
+# Backup files
+# ==========================================
+*.bak
+*.backup
+*.old
+*~
+
+# ==========================================
+# Lock files (keep package-lock.json for npm consistency)
+# ==========================================
+yarn.lock
+pnpm-lock.yaml
+
+# ==========================================
+# Database files
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ==========================================
+# Analytics and tracking
+# ==========================================
+analytics.json
+
+# ==========================================
+# Storybook (if used)
+# ==========================================
+storybook-static
+.out
+.storybook-out
+
+# ==========================================
+# Sentry (if used)
+# ==========================================
+.sentryclirc
+
+# ==========================================
+# Local configuration
+# ==========================================
+config.local.js
+config.local.json
+.local.*
+
+# ==========================================
+# Microbundle cache
+# ==========================================
+.fusebox/
+
+# ==========================================
+# Parcel (if used)
+# ==========================================
+.cache
+.parcel-cache
+
+# ==========================================
+# Vite (if used)
+# ==========================================
+.vite
+
+# ==========================================
+# Turbo (if used)
+# ==========================================
+.turbo
+
+# ==========================================
+# Umi (if used)
+# ==========================================
+.umi
+.umi-production
+.umi-test
+
+# ==========================================
+# Nuxt.js (if used)
+# ==========================================
+.nuxt
+
+# ==========================================
+# Gatsby (if used)
+# ==========================================
+.cache/
+public
+
+# ==========================================
+# VuePress (if used)
+# ==========================================
+.vuepress/dist
+
+# ==========================================
+# Serverless (if used)
+# ==========================================
+.serverless
+
+# ==========================================
+# DynamoDB Local (if used)
+# ==========================================
+.dynamodb/
+
+# ==========================================
+# TernJS (if used)
+# ==========================================
+.tern-port
+
+# ==========================================
+# FuseBox (if used)
+# ==========================================
+.fusebox/
+
+# ==========================================
+# JSPM (if used)
+# ==========================================
+jspm_packages/
+
+# ==========================================
+# Output files
+# ==========================================
+*.tgz
+*.tar.gz
+
+# ==========================================
+# Yarn (if used)
+# ==========================================
+.yarn-integrity
+
+# ==========================================
+# Netlify (if used)
+# ==========================================
+.netlify
+
+# ==========================================
+# Optional REPL history
+# ==========================================
+.node_repl_history
+
+# ==========================================
+# Logs directory
+# ==========================================
+logs/
+*.log
+
+# ==========================================
+# Custom project specific ignores
+# ==========================================
+# Add any project-specific files or directories here
+# For example:
+# /uploads
+# /private
+# /secrets
